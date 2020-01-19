@@ -1,0 +1,61 @@
+{
+    "name": "gabrieliuga/laravel-nova-mail-log",
+    "description": "Allow view of Mail Log in nova backend.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "homepage": "https://github.com/gabrieliuga/laravel-nova-mail-log",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Iuga",
+            "email": "me@iuga.dev",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "gabrieliuga/laravel-mail-log": "^1.0",
+        "gabrieliuga/laravel-nova-field-iframe": "^1.0",
+        "laravel/framework": "^6.2",
+        "laravel/nova": "^2.9"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Giuga\\LaravelNovaMailLog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Giuga\\LaravelNovaMailLog\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Giuga\\LaravelNovaSidebar\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
