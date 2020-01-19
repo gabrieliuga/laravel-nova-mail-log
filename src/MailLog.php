@@ -31,7 +31,7 @@ class MailLog extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'to', 'cc', 'bcc'
+        'id', 'to', 'cc', 'bcc',
     ];
 
     public static function label()
@@ -54,7 +54,7 @@ class MailLog extends Resource
             Text::make('Cc')->sortable(),
             Text::make('Bcc')->sortable(),
             DateTime::make('Created At')->sortable(),
-            Iframe::make('Message')->onlyOnDetail()
+            Iframe::make('Message')->onlyOnDetail(),
         ];
     }
 

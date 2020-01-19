@@ -1,9 +1,8 @@
 # Laravel nova mail log
 
-[![Build Status](https://img.shields.io/travis/gabrieliuga/laravel-nova-mail-log/master.svg?style=flat-square)](https://travis-ci.org/gabrieliuga/laravel-nova-mail-log)
 [![Quality Score](https://img.shields.io/scrutinizer/g/gabrieliuga/laravel-nova-mail-log.svg?style=flat-square)](https://scrutinizer-ci.com/g/gabrieliuga/laravel-nova-mail-log)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gabrieliuga/laravel-nova-mail-log.svg?style=flat-square)](https://packagist.org/packages/gabrieliuga/laravel-nova-mail-log)
-[![StyleCI](https://github.styleci.io/repos/233714380/shield?branch=master)](https://github.styleci.io/repos/233714380)
+[![StyleCI](https://github.styleci.io/repos/234955975/shield?branch=master)](https://github.styleci.io/repos/234955975)
 [![Total Downloads](https://img.shields.io/packagist/dt/gabrieliuga/laravel-nova-mail-log.svg?style=flat-square)](https://packagist.org/packages/gabrieliuga/laravel-nova-mail-log)
 
 Allow view of Mail Log in nova backend
