@@ -46,13 +46,6 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
 
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Giuga\\LaravelNovaSidebar\\ToolServiceProvider"
-            ]
-        }
-    },
     "config": {
         "sort-packages": true
     },
