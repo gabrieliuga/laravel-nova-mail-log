@@ -9,6 +9,11 @@ Allow view of Mail Log in nova backend
 
 
 ## Installation
+This package requires 2 other packages to function - follow the install instruction on each then proceed with the installation of nova-mail-log
+
+1) https://github.com/gabrieliuga/laravel-mail-log
+2) https://github.com/gabrieliuga/laravel-nova-field-iframe
+
 
 You can install the package via composer:
 
