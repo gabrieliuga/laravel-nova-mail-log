@@ -7,6 +7,7 @@ use Giuga\LaravelNovaFieldIframe\Iframe;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\MorphTo;
 use Laravel\Nova\Fields\Text;
 
 class MailLog extends Resource
@@ -53,6 +54,8 @@ class MailLog extends Resource
             Text::make('Subject')->sortable(),
             Text::make('Cc')->sortable(),
             Text::make('Bcc')->sortable(),
+            MorphTo::make(__('Process'), 'occurredProcess'),
+            MorphTo::make(__('Entity'), 'occurredEntity'),
             DateTime::make('Created At')->sortable(),
             Iframe::make('Message')->onlyOnDetail(),
         ];
