@@ -50,15 +50,15 @@ class MailLog extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('To')->sortable(),
+            Text::make(__('To'))->sortable(),
             MorphTo::make(__('Recipient'), 'recipient'),
-            Text::make('Subject')->sortable(),
-            Text::make('Cc')->sortable(),
-            Text::make('Bcc')->sortable(),
+            Text::make(__('Subject'))->sortable(),
+            Text::make(__('Cc'))->sortable(),
+            Text::make(__('Bcc'))->sortable(),
             MorphTo::make(__('Process'), 'occurredProcess'),
             MorphTo::make(__('Entity'), 'occurredEntity'),
-            DateTime::make('Created At')->sortable(),
-            Iframe::make('Message')->onlyOnDetail(),
+            DateTime::make(__('Created At'))->sortable(),
+            Iframe::make(__('Message'))->onlyOnDetail(),
         ];
     }
 
