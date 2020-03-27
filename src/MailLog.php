@@ -51,6 +51,7 @@ class MailLog extends Resource
         return [
             ID::make()->sortable(),
             Text::make(__('To'))->sortable(),
+            MorphTo::make(__('Recipient'), 'recipient'),
             Text::make(__('Subject'))->sortable(),
             Text::make(__('Cc'))->sortable(),
             Text::make(__('Bcc'))->sortable(),
